@@ -50,7 +50,7 @@
 	}
 	body.main-sidebar div#main, body.sidebar-main div#main {
 		width: 490px;
-		border: solid 4px green;
+		/*border: solid 4px green;*/
 	}
 	body.main-sidebar div#body, body.sidebar-main div#body {
 		margin: auto auto auto auto;
@@ -68,19 +68,17 @@
 		border: dotted 1px green;
 	}
 	body.sidebar-main div#main, body.sidebar-main div#sidebar /*Sidebar-main. Este estilo coloca el sidebar a la izquierda y el main a la derecha*/ {
-		float: right;
-		border: dotted 1px green;
+	float: right;
 	}
 	div#header div#logo /*Se define el logo flotante a la izquierda*/ {
-		margin-bottom: inherit;
-		border: dotted 1px green;
-		float: left; /*Hago estas caja flotante, y las siguientes cajas que estén en la misma posición también serám flotantes a la izquierda. No hace falta ponerle a div#header div#main-title también eta propiedad*/
+	margin-bottom: inherit;
+	float: left; /*Hago estas caja flotante, y las siguientes cajas que estén en la misma posición también serám flotantes a la izquierda. No hace falta ponerle a div#header div#main-title también eta propiedad*/
 	}
 	div#header div#main-title /*Es el título del encabezado. Al ser el logo flotante este también lo será */ {
-		width: 600px;
-		margin-bottom: inherit;
-		border: dotted 1px blue;
-		padding-bottom: 10px;/* DEFINE LOS ENLACES DE MEnU*/
+	width: 600px;
+	margin-bottom: inherit;
+	border-width: 1px;
+	padding-bottom: 10px;/* DEFINE LOS ENLACES DE MEnU*/
 	}
 	a.menus:link {
 		text-decoration: none;
@@ -183,7 +181,7 @@
         <img src="imagenes/play.png" alt="play" width="40px" onClick="document.getElementById('reproductor').play()"> <img src="imagenes/stop.png" alt="stop" width="40px" onClick="document.getElementById('reproductor').pause()"> <img src="imagenes/volUp.png" alt="vol+" width="40px" onClick="document.getElementById('reproductor').volume+=0.1"> <img src="imagenes/volDown.png" alt="vol-" width="40px" onClick="document.getElementById('reproductor').volume-=0.1"> </div>
     <!-- Actividad 3.2: incluir Audio -->
     
-    <p>&nbsp;</p>
+  <p>&nbsp;</p>
 </div>
 <div id="body">
     <div id="main"> 
@@ -226,7 +224,7 @@
         
     </div>
     <div id="sidebar">
-        <div><a href="#" class="menus">Inicio</a></div>
+      <div><a href="#" class="menus">Inicio</a></div>
         <div><a href="#" class="menus">¿Dónde Estamos?</a></div>
         <div><a href="#" class="menus">Nuestra Carta</a></div>
         <div><a href="#" class="menus">Horarios</a></div>
